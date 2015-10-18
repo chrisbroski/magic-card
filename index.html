@@ -36,7 +36,7 @@ header div {
     position: relative;
     border: 2px solid #000; 
     border-radius: 10px/20px;
-    box-shadow: inset 2px -3px 0 #aaa;
+    box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
     height: 33px; 
 }
 header:first-child {
@@ -55,16 +55,17 @@ section {
 section:last-child {
     margin-top: 38px; padding: 10px 7px;
     top: 55.7%; bottom: 44px;
-    border: 2px solid #888;
+    border: 2px solid #999;
     border-bottom: 0 none;
     border-left: 0 none;
+    background: #d3dddd;
 }
 footer {
-    color: #ddd;
+    color: #ccc;
     font-family: sans-serif; font-size: 9px; 
     position: absolute;
-    left: 0; bottom: -33px;
-    width: 100%;  
+    left: 25px; bottom: 10px; right: 25px;
+    overflow: auto; 
 }
 footer p {
     margin-bottom: 0.2em;
@@ -81,7 +82,7 @@ footer p {
 #powerToughness div {
     padding: 4px 0 0; 
     height: 23px;
-    box-shadow: inset -2px 2px 1px #333;
+    box-shadow: inset -2px 2px 1px #333, inset 1px -1px 0 #fff;
     border: 0 none;
     font-size: 21px;
 }
@@ -135,6 +136,12 @@ blockquote p {margin-bottom: 0; }
 
 <header id="powerToughness"><div><h2>1/1</h2></div></header>
 
+<footer>
+<p>100/100 C
+<h6>™ &amp; © 2015 Wizards of the Coast</h6>
+<p>ABC ‧ EN - Chris Broski
+</footer>
+
 <section>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tincidunt lectus.
 <p>Sed malesuada pretium nibh ac lobortis. Sed sit amet nibh aliquam, dictum justo quis.
@@ -143,12 +150,6 @@ blockquote p {margin-bottom: 0; }
 <p>“Quisque ullamcorper turpis id magna consectetur, sed molestie nunc pretium.”
 <p>&mdash;Some Guy
 </blockquote>
-
-<footer>
-<p>100/100 C
-<h6>™ &amp; © 2015 Wizards of the Coast</h6>
-<p>ABC ‧ EN - Chris Broski
-</footer>
 </section>
 
 </article>
