@@ -6,19 +6,18 @@
 <title>Magic: The Gathering Card</title>
 <style>
 * {margin: 0; padding: 0; box-sizing: border-box; }
-html {background: #000; padding: 10px; height: 100%; width: 100%; }
+html {background: #000; padding: 10px; height: 100%; }
 body {
-    padding: 10px;
-    background: #ccc;
-    border-radius: 10px;
-    height: 100%; width: 100%;
+    padding: 5px 10px 30px;
+    background: linear-gradient(0deg, #333, #aaa);
+    border-radius: 10px 10px 40px 40px;
+    height: 90%;
 }
 article {
     padding: 3px;
-    height: 100%; width: 100%;
+    height: 112%;
     border: 2px solid #000;
     border-radius: 5px 5px 0 0;
-    overflow: visible;
     background: #fff;
 }
 header {
@@ -31,7 +30,8 @@ header {
 }
 header div {
     padding: 5px 8px 3px; 
-    background: #eee;
+    /*background: #C0CBD1;*/
+    background: radial-gradient(ellipse farthest-corner, #E0E7ED 50%, #BDC6CD);
     position: relative;
     border: 2px solid #000; 
     border-radius: 10px/20px;
@@ -39,29 +39,42 @@ header div {
     height: 35px; 
 }
 header:first-child {
-    top: 20px;  
+    top: 15px;  
 }
-h1 {font-size: 22px; }
 section {
-    margin-top: 65px; 
+    margin-top: 58px; 
     background: #ddd;
     position: absolute;
     top: 0; left: 26px; right: 26px; bottom: 50%;
     border: 2px solid #000;
 }
 section:last-child {
-    margin-top: 45px; 
-    top: 50%; left: 26px; right: 26px; bottom: 26px;
-    padding: 10px 7px;
-    border-top: 2px solid #999;
-    border-right: 2px solid #999;
+    margin-top: 44px; padding: 10px 7px;
+    top: 50%; bottom: 46px;
+    border: 2px solid #888;
     border-bottom: 0 none;
     border-left: 0 none;
 }
-h2 {font-size: 18px; }
-h3 {padding-top: 2px; position: absolute; right: 5px; top: 4px; width: 1em; background: #ddd; text-align: center; border-radius: 1em; font-weight: normal; box-shadow: -1px 2px 0 black; line-height: 1em; vertical-align: bottom; height: 0.95em; }
-blockquote {font-style: italic; }
+
+h1 {font-size: 22px; line-height: 1em; }
+h2 {font-size: 17px; line-height: 1em; }
+h3 {
+    padding-top: 2px;
+    position: absolute;
+    right: 5px; top: 4px;
+    width: 1em; height: 0.95em;
+    background: #ddd;
+    text-align: center;
+    border-radius: 1em;
+    font-weight: normal;
+    box-shadow: -1px 2px 0 black;
+    line-height: 1em;
+    vertical-align: bottom;
+}
 h4 {position: absolute; right: 4px; top: 3px; width: 1em; }
+p {margin-bottom: 0.6em; line-height: 1.1em; }
+blockquote {font-style: italic; }
+blockquote p {margin-bottom: 0; }
 </style>
 
 <body>
@@ -70,7 +83,7 @@ h4 {position: absolute; right: 4px; top: 3px; width: 1em; }
 <header>
 <div>
 <h1>Card Name</h1>
-<h3>4</h3>
+<h3>0</h3>
 </div>
 </header>
 
@@ -84,12 +97,14 @@ h4 {position: absolute; right: 4px; top: 3px; width: 1em; }
 </header>
 
 <section>
-<p>Card description goes here
-<p>There can be multiple paragraphs.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tincidunt lectus.
+<p>Sed malesuada pretium nibh ac lobortis. Sed sit amet nibh aliquam, dictum justo quis, tristique ipsum.
+
 <blockquote>
-<p>“Some sort of quote.”
+<p>“Quisque ullamcorper turpis id magna consectetur, sed molestie nunc pretium. Integer rutrum nec dolor a auctor.”
 <p>&mdash;Guy Who Said It
 </blockquote>
+
 </section>
 
 </article>
