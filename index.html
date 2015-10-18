@@ -63,11 +63,27 @@ footer {
     color: #ddd;
     font-family: sans-serif; font-size: 9px; 
     position: absolute;
-    left: 0; bottom: -33px; 
+    left: 0; bottom: -33px;
+    width: 100%;  
 }
 footer p {
     margin-bottom: 0.2em;
-    letter-spacing: 0.18em; 
+    letter-spacing: 0.18em;
+}
+#powerToughness {
+    width: 4em;
+    top: auto; left: auto; 
+    text-align: center; 
+    bottom: 28px; right: 21px; 
+    z-index: 1;
+    box-shadow: -2px 1px 2px 0 rgba(0, 0, 0, 0.8);
+}
+#powerToughness div {
+    padding: 4px 0 0; 
+    height: 23px;
+    box-shadow: inset -2px 2px 1px #333;
+    border: 0 none;
+    font-size: 21px;
 }
 
 h1 {font-size: 21px; line-height: 1em; }
@@ -92,6 +108,7 @@ h4 {
     position: absolute;
     right: 10px; top: 7px;
 }
+h6 {float: right; width: 60%; text-align: right; font-size: 8px; }
 p {margin-bottom: 0.6em; line-height: 1.1em; }
 blockquote {font-style: italic; }
 blockquote p {margin-bottom: 0; }
@@ -116,6 +133,8 @@ blockquote p {margin-bottom: 0; }
 </div>
 </header>
 
+<header id="powerToughness"><div><h2>1/1</h2></div></header>
+
 <section>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tincidunt lectus.
 <p>Sed malesuada pretium nibh ac lobortis. Sed sit amet nibh aliquam, dictum justo quis.
@@ -127,9 +146,9 @@ blockquote p {margin-bottom: 0; }
 
 <footer>
 <p>100/100 C
+<h6>™ &amp; © 2015 Wizards of the Coast</h6>
 <p>ABC ‧ EN - Chris Broski
 </footer>
-
 </section>
 
 </article>
