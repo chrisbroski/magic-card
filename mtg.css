@@ -47,14 +47,14 @@ header:first-child {
 header:first-child div {
     height: 34px;  
 }
-section {
+article > div {
     margin-top: 61px; 
     background: #ddd;
     position: absolute;
     top: 0; left: 29px; right: 28px; bottom: 44.3%;
     border: 2px solid #333;
 }
-section:last-child {
+#textBox {
     margin-top: 38px; padding: 10px 7px;
     top: 55.7%; bottom: 44px;
     border: 2px solid #999;
