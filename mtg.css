@@ -5,16 +5,16 @@ body {
     background-color: #69a;
     background-image: 
         repeating-linear-gradient(140deg, transparent, rgba(255, 255, 255, 0.25) 1%, transparent 20%),
-        repeating-linear-gradient(20deg, transparent, transparent 7%, rgba(255, 255, 255, 0.4), transparent 8%),
+        repeating-linear-gradient(-30deg, transparent, transparent 8%, rgba(255, 255, 255, 0.4), transparent 9%),
         repeating-linear-gradient(-10deg, transparent, transparent 13%, rgba(0, 0, 0, 0.4), transparent 15%),
-        repeating-linear-gradient(80deg, transparent, transparent 29.5%, rgba(0, 0, 0, 0.25), transparent 30%),
-        repeating-linear-gradient(120deg, transparent, transparent 24.5%, rgba(0, 0, 0, 0.25), transparent 25%),
+        repeating-linear-gradient(80deg, transparent, transparent 7.5%, rgba(0, 0, 0, 0.25), transparent 8%),
         repeating-linear-gradient(5deg, transparent, transparent 10.5%, rgba(255, 255, 255, 0.5), transparent 11%),
-        repeating-linear-gradient(85deg, transparent, transparent 8.5%, rgba(255, 255, 255, 0.5) 5px, transparent 9%),
+        repeating-linear-gradient(75deg, transparent, transparent 11.5%, rgba(255, 255, 255, 0.5), transparent 12%),
         repeating-radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1%, transparent 1%, transparent 5%);
     border-radius: 10px 10px 40px 40px;
     height: 93.5%;
 }
+
 article {
     padding: 3px;
     height: 109.4%;
@@ -24,8 +24,16 @@ article {
     border-radius: 5px 5px 0 0;
     background: #ddd;
 }
+article > div {
+    margin-top: 61px; 
+    background: #ddd;
+    position: absolute;
+    top: 0; left: 29px; right: 28px; bottom: 44.3%;
+    border: 2px solid #333;
+}
+
 header {
-    padding: 3px 3px 3px; 
+    padding: 3px; 
     background: #ddd;
     border-radius: 8px/20px;
     box-shadow: -2px 0 0 0 rgba(0, 0, 0, 0.8);
@@ -41,19 +49,9 @@ header div {
     box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
     height: 33px; 
 }
-header:first-child {
-    top: 23px;  
-}
-header:first-child div {
-    height: 34px;  
-}
-article > div {
-    margin-top: 61px; 
-    background: #ddd;
-    position: absolute;
-    top: 0; left: 29px; right: 28px; bottom: 44.3%;
-    border: 2px solid #333;
-}
+header:first-child {top: 23px; }
+header:first-child div {height: 34px; }
+
 #textBox {
     margin-top: 38px; padding: 10px 7px;
     top: 55.7%; bottom: 44px;
@@ -62,23 +60,11 @@ article > div {
     border-left: 0 none;
     background: #d3dddd;
 }
-footer {
-    color: #ccc;
-    font-family: sans-serif; font-size: 9px; 
-    position: absolute;
-    left: 25px; bottom: 10px; right: 25px;
-    overflow: auto; 
-}
-footer p {
-    margin-bottom: 0.2em;
-    letter-spacing: 0.18em;
-}
+
 #powerToughness {
     width: 4em;
-    top: auto; left: auto; 
+    top: auto; right: 21px; bottom: 28px; left: auto; 
     text-align: center; 
-    bottom: 28px; right: 21px; 
-    z-index: 1;
     box-shadow: -2px 1px 2px 0 rgba(0, 0, 0, 0.8);
 }
 #powerToughness div {
@@ -88,6 +74,15 @@ footer p {
     border: 0 none;
     font-size: 21px;
 }
+
+footer {
+    color: #ccc;
+    font-family: sans-serif; font-size: 9px; 
+    position: absolute;
+    left: 25px; bottom: 10px; right: 25px;
+    overflow: auto; 
+}
+footer p {margin-bottom: 0.2em; letter-spacing: 0.18em; }
 
 h1 {font-size: 21px; line-height: 1em; }
 h2 {font-size: 18px; line-height: 1em; }
